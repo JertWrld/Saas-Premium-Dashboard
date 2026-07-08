@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Dashboard — Premium Landing Page</title>
+    <link rel="stylesheet" href="SaaS.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">SaaS<span>Dashboard</span></span></a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <button class="btn btn-primary open-modal-btn">Get Started</button>
+            <button class="mobile-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <span class="badge">Live Tracking Engine v2.0</span>
+            <h1>Track your financial metrics with zero friction.</h1>
+            <p>Deconstruct complex market data into beautiful, actionable visual layers. Built for high-frequency scaling.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary open-modal-btn">Start Free Trial</button>
+                <button class="btn btn-secondary open-modal-btn">Watch Demo</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <h2>Transparent Pricing</h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="card">
+                <h3>Starter Alpha</h3>
+                <div class="price">$29<span>/mo</span></div>
+                <button class="btn btn-secondary open-modal-btn">Choose Starter</button>
+            </div>
+            <div class="card popular">
+                <div class="card-badge">Most Popular</div>
+                <h3>Pro Institutional</h3>
+                <div class="price">$79<span>/mo</span></div>
+                <button class="btn btn-primary open-modal-btn">Choose Pro</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What data pairs are fully supported? <span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Our dashboard fully supports native tracking for major currency pairs, indices like NAS100, and commodities including XAU/USD with millisecond updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="custom-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="close-modal-btn">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title">Secure Portal Entry</h3>
+            </div>
+            <div class="modal-body">
+                <p>Initializing secure verification channel. Please enter an operational email below.</p>
+                <form id="portal-form">
+                    <input type="email" placeholder="Enter your email address" required class="modal-input">
+                    <button type="submit" class="btn btn-primary modal-submit-btn">Create Free Account</button>
+                </form>
+                <div id="form-success-msg" class="success-text hidden">Connection Secure. Welcome!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

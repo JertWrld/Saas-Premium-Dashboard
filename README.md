@@ -1,1 +1,0 @@
-A high-performance, responsive front-end component built with semantic HTML5, modern CSS Grid/Flexbox, and optimized vanilla JavaScript. Fully accessible and designed to convert visitors into clients.
